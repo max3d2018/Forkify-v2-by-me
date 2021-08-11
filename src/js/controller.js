@@ -22,7 +22,7 @@ const recipeController = async () => {
     resultsView.update(models.getSearchResultsPage());
     recipeView.render(models.state.recipe);
   } catch (err) {
-    recipeView.renderError();
+    recipeView.renderError(err.message);
   }
 };
 

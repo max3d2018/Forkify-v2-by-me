@@ -31,7 +31,6 @@ const createRecipeFormat = rec => {
 export const loadRecipe = async id => {
   try {
     const data = await AJAX(`${config.API_URL}/${id}?key=${config.API_KEY}`);
-    console.log(data);
     const { recipe } = data.data;
     state.recipe = createRecipeFormat(recipe);
     return state.recipe;
