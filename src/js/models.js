@@ -23,7 +23,7 @@ const createRecipeFormat = rec => {
     cookingTime: rec.cooking_time,
     id: rec.id,
     bookmarked:
-      state.bookmarks.some(b => b.id === rec.id) || rec.key ? true : false,
+      state.bookmarks?.some(b => b.id === rec.id) || rec.key ? true : false,
     ...(rec.key && { key: rec.key }),
   };
 };

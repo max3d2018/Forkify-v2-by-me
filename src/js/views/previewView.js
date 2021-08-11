@@ -5,7 +5,6 @@ class PreviewView extends View {
   _parentElement = '';
 
   _generateMarkup() {
-    console.log(this._data);
     const activeRecipeId = window.location.hash.slice(1);
     return `
     <li class="preview">
