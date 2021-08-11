@@ -91,6 +91,10 @@ const init = () => {
   paginationView.addHandlerClick(paginationController);
   bookmarksView.addHandlerLocalStorageBookmarks(localStorageBookmarkController);
   addRecipeView.addHandlerSubmit(uploadControl);
+  alert('ERROR');
+  alert('ERROR');
+  alert('ERROR');
+  alert('ERROR');
 };
 
 init();
